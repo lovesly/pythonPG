@@ -19,3 +19,14 @@ print(y)
 # parentheses will tell where to start and stop what string to extract
 y = re.findall('^From (\S+@\S+)', x)
 print(y)
+
+# extract email
+y = re.findall('@([^ ]*)', x)
+print(y)
+y = re.findall('@(\S+)', x)
+print(y)
+
+# more precise
+y = re.findall('^From .*@([^ ]*)', x)
+print(y)
+
