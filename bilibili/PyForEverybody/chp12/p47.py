@@ -14,3 +14,9 @@ print(type(x))
 # question, what is the type of decode function???
 x = b'10'
 print(x.decode())
+
+y = '10'
+print(y.encode())
+print(y.encode().decode())
+
+# how to use ord()'s return value?? transfer the char code to real characters????
